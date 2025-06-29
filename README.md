@@ -5,7 +5,11 @@ _keytool -genkeypair -alias mykey -keyalg RSA -keysize 2048 -storetype PKCS12 -k
 
 2. add _mykeystore.p12_ file to _maim/java/resources_
 3. add below in application.properties
-   _server.ssl.key-store=classpath:mykeystore.p12
-   server.ssl.key-store-password=changeit
-   server.ssl.key-alias=mykey
-   server.ssl.key-store-type=PKCS12_
+
+   _server.ssl.key-store=classpath:mykeystore.p12_
+
+   _server.ssl.key-store-password=changeit_
+
+   _server.ssl.key-alias=mykey_
+
+   _server.ssl.key-store-type=PKCS12_

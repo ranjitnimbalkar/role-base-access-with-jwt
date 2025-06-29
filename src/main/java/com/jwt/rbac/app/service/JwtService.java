@@ -60,6 +60,7 @@ public class JwtService {
     }
 
     public Claims extractAllClaims(String token) {
+        System.out.println("test");
         return Jwts.parserBuilder()
                 .setSigningKey(getSignKey())
                 .build()
